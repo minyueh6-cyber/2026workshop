@@ -1,6 +1,8 @@
 # 2026 時間設計一日工作坊
 
-GitHub Pages 網址：部署後請填入。
+GitHub repo：https://github.com/minyueh6-cyber/2026workshop
+
+GitHub Pages 網址：https://minyueh6-cyber.github.io/2026workshop/
 
 ## 網站內容
 
@@ -53,14 +55,10 @@ Apps Script 程式碼使用第一個工作表，不依賴 `Sheet1` 名稱。
 
 ## 部署到 GitHub Pages
 
-目前此環境沒有可用的 `git` 指令，且 GitHub CLI 無法讀取本機設定，因此尚未完成自動部署。可用工具恢復後，可執行：
+網站已推送到 GitHub。若 Pages 尚未啟用，請到 repo 的 Settings > Pages，將來源設為 `main` 分支的根目錄。
 
 ```powershell
-git init
-git add index.html styles.css script.js cover.jpg README.md
-git commit -m "Create 2026 workshop website"
-gh repo create 2026workshop --public --source . --push
-gh repo edit 2026workshop --enable-pages
+gh repo view minyueh6-cyber/2026workshop --web
 ```
 
-若使用 GitHub 網頁介面，建立 `2026workshop` repo 後上傳 `index.html`、`styles.css`、`script.js`、`cover.jpg`、`README.md`，再到 Settings > Pages 啟用 Pages。
+本次部署未上傳 `spec` 資料夾。
