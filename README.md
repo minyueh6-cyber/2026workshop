@@ -4,6 +4,8 @@ GitHub repo：https://github.com/minyueh6-cyber/2026workshop
 
 GitHub Pages 網址：https://minyueh6-cyber.github.io/2026workshop/
 
+Apps Script Web App URL：https://script.google.com/macros/s/AKfycbzHcuFywi_CHAltvOzupSDXtnP1DfGeo4BzyIFRNuWLEra26AazXmsMp77vtlwYQ6zj9A/exec
+
 ## 網站內容
 
 - 活動標題：2026 時間設計一日工作坊
@@ -17,7 +19,7 @@ GitHub Pages 網址：https://minyueh6-cyber.github.io/2026workshop/
 3. 開啟「擴充功能」中的 Apps Script。
 4. 貼上下方程式碼並部署成 Web App。
 5. Web App 存取權限選擇「任何人」。
-6. 完成 OAuth 驗證後，把 Web App URL 填入網站報名表單的 Apps Script URL 欄位。
+6. 完成 OAuth 驗證後，把 Web App URL 填入網站報名表單的 Apps Script URL 欄位；目前網站已預設使用上方 URL。
 
 ```javascript
 function doPost(e) {

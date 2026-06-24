@@ -2,8 +2,10 @@ const form = document.querySelector("#signupForm");
 const statusEl = document.querySelector("#formStatus");
 const endpointInput = document.querySelector("#endpoint");
 const endpointKey = "workshopAppsScriptUrl";
+const defaultEndpoint =
+  "https://script.google.com/macros/s/AKfycbzHcuFywi_CHAltvOzupSDXtnP1DfGeo4BzyIFRNuWLEra26AazXmsMp77vtlwYQ6zj9A/exec";
 
-endpointInput.value = localStorage.getItem(endpointKey) || "";
+endpointInput.value = localStorage.getItem(endpointKey) || defaultEndpoint;
 
 function setStatus(message, tone = "info") {
   statusEl.textContent = message;
