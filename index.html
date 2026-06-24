@@ -1,0 +1,142 @@
+<!doctype html>
+<html lang="zh-Hant">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>2026 時間設計一日工作坊</title>
+    <meta
+      name="description"
+      content="2026 時間設計一日工作坊報名網站，掌控時間、設計生活、提升效能。"
+    >
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <header class="topbar" aria-label="主要導覽">
+      <a class="brand" href="#hero">2026 Workshop</a>
+      <nav>
+        <a href="#agenda">流程</a>
+        <a href="#signup">報名</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero" id="hero">
+        <img src="cover.jpg" alt="時間設計半日工作坊活動封面" class="hero__image">
+        <div class="hero__shade"></div>
+        <div class="hero__content">
+          <p class="eyebrow">Time Design Workshop</p>
+          <h1>2026 時間設計一日工作坊</h1>
+          <p class="hero__lead">掌控時間，設計生活，提升每天真正重要的效率。</p>
+          <div class="hero__actions" aria-label="活動摘要">
+            <a href="#signup" class="button button--primary">立即報名</a>
+            <a href="#agenda" class="button button--ghost">查看流程</a>
+          </div>
+        </div>
+      </section>
+
+      <section class="intro" aria-label="活動資訊">
+        <div>
+          <span class="label">日期</span>
+          <strong>2026.6.24（三）</strong>
+        </div>
+        <div>
+          <span class="label">時間</span>
+          <strong>09:30 - 13:00</strong>
+        </div>
+        <div>
+          <span class="label">地點</span>
+          <strong>台北 / 線上</strong>
+        </div>
+      </section>
+
+      <section class="section section--split" id="agenda">
+        <div class="section__heading">
+          <p class="eyebrow">Agenda</p>
+          <h2>活動內容</h2>
+          <p>用一個上午整理時間感、任務節奏與行動優先序，把忙碌變成可設計的生活系統。</p>
+        </div>
+
+        <ol class="timeline" aria-label="工作坊流程">
+          <li>
+            <time>08:00</time>
+            <span>報到</span>
+          </li>
+          <li>
+            <time>09:00</time>
+            <span>場次一：時間盤點與生活節奏</span>
+          </li>
+          <li>
+            <time>10:00</time>
+            <span>Break time</span>
+          </li>
+          <li>
+            <time>10:30</time>
+            <span>場次二：設計可執行的每日系統</span>
+          </li>
+          <li>
+            <time>11:30</time>
+            <span>Q&amp;A</span>
+          </li>
+          <li>
+            <time>12:00</time>
+            <span>活動結束</span>
+          </li>
+        </ol>
+      </section>
+
+      <section class="section signup-band" id="signup">
+        <div class="section__heading">
+          <p class="eyebrow">Register</p>
+          <h2>報名表單</h2>
+          <p>留下聯絡資訊後，系統會將資料送至活動 Google Sheet。</p>
+        </div>
+
+        <form class="signup-form" id="signupForm">
+          <label>
+            <span>姓名</span>
+            <input name="name" autocomplete="name" required>
+          </label>
+          <label>
+            <span>Email</span>
+            <input name="email" type="email" autocomplete="email" required>
+          </label>
+          <label>
+            <span>電話</span>
+            <input name="phone" type="tel" autocomplete="tel" required inputmode="tel">
+          </label>
+          <label>
+            <span>單位</span>
+            <input name="organization" autocomplete="organization" required>
+          </label>
+          <label>
+            <span>職稱</span>
+            <input name="title" autocomplete="organization-title" required>
+          </label>
+
+          <details class="endpoint-panel">
+            <summary>Apps Script URL</summary>
+            <label>
+              <span>Web App URL</span>
+              <input
+                name="endpoint"
+                id="endpoint"
+                type="url"
+                placeholder="https://script.google.com/macros/s/..."
+              >
+            </label>
+          </details>
+
+          <button class="button button--primary" type="submit">送出報名</button>
+          <p class="form-status" id="formStatus" role="status" aria-live="polite"></p>
+        </form>
+      </section>
+    </main>
+
+    <footer>
+      <span>2026 時間設計一日工作坊</span>
+      <a href="#hero">回到頂端</a>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
